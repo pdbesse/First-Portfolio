@@ -84,7 +84,6 @@ article div {
     display:flex;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
     margin-left: 20px;
     border-style: solid;
     border-right-style: dashed;
@@ -99,14 +98,13 @@ article div {
 .navleftul {
     position:relative;
     left: 100%;
+    
 }
 
-.navleftli {
-    /* margin:10px; */
-    display:flex;
+.navleftli1 {
     justify-content: center;
     flex-direction:row;
-    flex-wrap:wrap;
+    flex-grow: 2;
     text-align:center;
     border-style:solid;
     border-left-style: dashed;
@@ -115,14 +113,44 @@ article div {
     border-radius: 10px;
     background-color: var(--navbkgd);
     /* text-shadow: 0 0 5px var(--purptextshdw);  */
-    padding: 10px
-    
+    padding: 10px;
+    width: 600%;
+
+}
+
+.columnwork {
+    display:inline-flex;
+    flex-grow: 1;
+    /* width: 618%; */
+    flex-direction: column;
+}
+
+.navleftli {
+    /* margin:10px; */
+   /*  display:inline-flex; */
+    justify-content: center;
+    /* flex-direction:row; */
+    /* flex-wrap:wrap; */
+    text-align:center;
+    border-style:solid;
+    border-left-style: dashed;
+    border-width: 2px;
+    border-color: var(--black);
+    border-radius: 10px;
+    background-color: var(--navbkgd);
+    /* text-shadow: 0 0 5px var(--purptextshdw);  */
+    padding: 10px;
+
 }
 
 a {
     color:var(--black);
     text-decoration:none;
 
+}
+
+img {
+    max-width: 100%;
 }
 
 h2 {
