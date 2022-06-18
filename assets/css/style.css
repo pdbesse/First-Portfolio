@@ -14,10 +14,9 @@
     }
     
 body {
-        /* background-color: #ffffff; */
-       /*  display:flex; */
-       background-image: url("../images/header-background.jpg");
-       background-size: cover;
+    /* background-color: #ffffff; */
+    background-image: url("../images/header-background.jpg");
+    background-size: cover;
 
     }
     
@@ -76,9 +75,9 @@ nav ul {
     
 }
 
-article div {
+/* article div {
     position: relative;
-}
+} */
 
 .navleft {
     display:flex;
@@ -120,9 +119,9 @@ article div {
 
 .columnwork {
     display:inline-flex;
-    flex-grow: 1;
+    flex-grow: 0;
     /* width: 618%; */
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .navleftli {
