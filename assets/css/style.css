@@ -22,6 +22,7 @@ body {
     background-image: url("../images/header-background.jpg");
     background-size: cover;
     background-position: center;
+
    /*  position:sticky; */
     top:0;
     /* text-shadow: 0 0 5px #ff00f2cb;  */
@@ -99,9 +100,9 @@ nav ul {
 }
 
 .largeimgli {
-    
+    display: flex;
     justify-content: center;
-   /*  flex-direction:row; */
+    flex-direction: column;
     text-align:center;
     border-style:solid;
     border-left-style: dashed;
@@ -116,36 +117,74 @@ nav ul {
 
 }
 
-h3 a {
-    flex-basis: auto;
-}
-
-.columnwork {
-    display:inline-flex;
-    /* On sunday explore width. The problem is somewhere in this,
-    the above, and the below class */
-    width: 411%;
-    flex-direction: row;
-    flex: 1 0 auto;
-}
-
-.smallimgli {
-    /* margin:10px; */
-    /* display: inline-flex; */
-    justify-content: center;
-   /*  flex-direction:row;
-    flex-wrap:wrap; */
-    text-align:center;
+.largeimgli li {
     border-style:solid;
     border-left-style: dashed;
     border-width: 2px;
     border-color: var(--black);
     border-radius: 10px;
     background-color: var(--navbkgd);
-    padding: 10px;
+}
+
+.largeimgli img {
+    border-radius: 10px;
+}
+
+
+h3 a {
+    flex-basis: auto;
+}
+
+.columnwork {
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    /* On sunday explore width. The problem is somewhere in this,
+    the above, and the below class */
+    /* width: 411%; */
+    /* flex-direction: row; */
+    flex: 0 1 100%;
+    text-align:center;
+    /* border-style:solid;
+    border-left-style: dashed;
+    border-width: 2px;
+    border-color: var(--black);
+    border-radius: 10px;
+    background-color: var(--navbkgd); */
+    /* padding: 10px; */
+  /*   width: 50%; */
+
+}
+
+.smallimgli {
+    display: flex;
+    flex-direction: column;
+    /* margin:10px; */
+    /* display: inline-flex; */
+    justify-content: space-around;
+    flex: 1 1 auto;
+   /*  flex-direction:row;
+    flex-wrap:wrap; */
+   /*  text-align:center;*/
+    /* border-style:solid;
+    border-left-style: dashed;
+    border-width: 2px;
+    border-color: var(--black);
+    border-radius: 10px;
+    background-color: var(--navbkgd);
+    padding: 10px; */
     /* box-sizing: border-box; */
     /* width: 50%;  */
 
+}
+
+.smallimgli h3 a {
+    border-style:solid;
+    border-left-style: dashed;
+    border-width: 2px;
+    border-color: var(--black);
+    border-radius: 10px;
+    background-color: var(--navbkgd);
 }
 
 a {
