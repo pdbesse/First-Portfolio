@@ -4,7 +4,7 @@
 
 I created this page as a portfolio to display my projects to a future employer. The portfolio displays the skills I have learned so far, from HTML semantics and website styling to flexbox, media queries, and CSS variables.
 
-[First Portfolio](https://pdbesse.github.io/first-portfolio/#my-work)
+[First Portfolio](https://pdbesse.github.io/First-Portfolio)
 
 ## Table of Contents
 
