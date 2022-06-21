@@ -1,10 +1,14 @@
+/* set color variables */
 :root {
     --purptextshdw: #ff00f2cb;
     --black: #000000cb;
     --navbkgd:#dfdfdf1e;
+    --navbkgd2: #ffffff80;
+
 
 }
 
+/* set font for app */
 * {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 0;
@@ -12,18 +16,21 @@
     
 }
 
+/* text color black; no link style */
 a {
     color:var(--black);
     text-decoration: none;
     
 }
-    
+
+/* set background image to cover whole page */
 body {
     background-image: url("../images/header-background.jpg");
     background-size: cover;
 
     }
 
+/* set flex properties for container with two smaller image links */
 .columnwork {
     display:flex;
     justify-content: space-around;
@@ -33,6 +40,7 @@ body {
 
 }
 
+/* set flex, font, box properties for About Me section */
 .contentabout {
     position:relative;
     left: 100%;
@@ -45,7 +53,7 @@ body {
     border-width: 2px;
     border-color: var(--black);
     border-radius: 10px;
-    background-color:#ffffff80;
+    background-color: var(--navbkgd2);
     font-size: 20px;
     font-weight: bold;
     padding: 10px;
@@ -53,6 +61,7 @@ body {
 
 }
 
+/* set flex, font, box properties for Reach Me section */
 .contentcontact {
     position:relative;
     left: 100%;
@@ -65,24 +74,26 @@ body {
     border-width: 2px;
     border-color: var(--black);
     border-radius: 10px;
-    background-color:#ffffff80;
+    background-color: var(--navbkgd2);
     font-size: 15px;
     font-weight: bold;
     padding: 10px;
     width: 500%;
 }
 
+/* set padding properties for Reach Me content */
 .contentcontact p {
     padding: 0px 10px 0px 10px;
 }
 
+/* set container location relative to navleft container */
 .contentproj {
     position:relative;
     left: 100%;
     
 }
 
-/* .footer {
+.footer {
     display: flex;
     align-self: center;
     justify-content: center;
@@ -91,36 +102,38 @@ body {
 
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
-    font-size: 25px;
+    font-size: 12px;
     border-style:solid;
     border-width: 2px;
     border-color: var(--black);
     border-radius: 10px;
     background-color:#ffffff80;
     text-shadow: 0 0 5px var(--purptextshdw); 
-    padding: 10px;
-    margin: 10px;
+    padding: 2px;
+    margin: 2px;
     width: 10%;
-} */
+}
 
+/* set h1 style properties */
 h1 {
     border-style:solid;
     border-width: 2px;
     border-color: var(--black);
     border-radius: 10px;
-    background-color:#ffffff80;
+    background-color: var(--navbkgd2);
     text-align: center;
     text-shadow: 0 0 5px var(--purptextshdw); 
     padding: 10px;
     margin: 10px;
 }
 
+/* set h2 style properties */
 h2 {
     display:flex;
     justify-content: center;
-    background-color:#ffffff80;
+    background-color: var(--navbkgd2);
     border-radius: 10px;
     border-width: 2px;
     border:black;
@@ -130,6 +143,7 @@ h2 {
     
 }
 
+/* set h3 style properties */
 h3 {
     background-color: var(--navbkgd);
     text-shadow: 0 0 10px var(--purptextshdw);
@@ -138,37 +152,36 @@ h3 {
 
 }
 
-/* h3 a {
-    flex-basis: auto;
-} */
-
+/* set background image and style properties of header */
 .header {
     background-image: url("../images/header-background.jpg");
     background-size: cover;
     background-position: center;
     /* position: sticky; */
     top:0;
-    color: #000000cb;
+    color: var(--black);
     border-style:solid;
     border-width:5px;
-    border-color: #000000cb;
+    border-color: var(--black);
     border-radius: 10px;
     padding: 20px;
-    z-index: 3;
+    /* z-index: 3; */
 }
 
+/* set h1 font size and text shadow */
 .header h1 {
     font-size: 50px;
     text-shadow: 0 0 5px var(--purptextshdw)
-    
 
 }
 
+/* scale height to img width; sets max width */
 img {
     max-width: 100%;
     height: auto;
 }
 
+/* set img link flex properties, styling */
 .largeimgli {
     display: flex;
     justify-content: center;
@@ -185,6 +198,7 @@ img {
 
 }
 
+/* set box styling on img links */
 .largeimgli li {
     border-style:solid;
     box-sizing: border-box;
@@ -195,6 +209,7 @@ img {
 
 }
 
+/* set box styling on imgs */
 .largeimgli img {
     box-sizing: border-box;
     border-radius: 10px;
@@ -206,17 +221,21 @@ img {
     
 }
 
+/* set border on h3 */
 .largeimgli h3 {
     border: black;
     
 }
 
+/* set padding, margin, font size on nav section */
 nav {
     padding-top: 10px;
     margin-right: 20px;
     font-size: 20px;
 
 }
+
+/* set flex properties, box styling, width, margin of left column */
 .navleft {
     display:flex;
     justify-content: center;
@@ -231,22 +250,25 @@ nav {
 
 }
 
+/* set box styling, padding, margin on nav links */
 .navli {
     border-style:solid;
     border-width: 2px;
     border-color: var(--black);
     border-radius: 10px;
-    background-color:#ffffff80;
+    background-color: var(--navbkgd2);
     text-shadow: 0 0 5px var(--purptextshdw); 
     padding: 10px;
     margin: 10px;
     
 }
 
+/* turn nav link background transparent on hover */
 .navli:hover {
     background-color: transparent;
 }
 
+/* set border on self-portrain */
 .selfimg {
     border: black;
     border-style:solid;
@@ -254,6 +276,7 @@ nav {
     border-radius: 10px;
 }
 
+/* remove bullet point style from list; set flex properties */
 nav ul {
     list-style-type: none;
     display:flex;
@@ -262,6 +285,7 @@ nav ul {
 
 }
 
+/* set small img link flex properties */
 .smallimgli {
     display: flex;
     flex-direction: column;
@@ -269,22 +293,26 @@ nav ul {
 
 }
 
+/* remove bullet point style from list */
 ul {
     list-style-type: none;
 }
 
+/* set flex properties for large media screens */
 @media screen and (max-width: 992px) {
     body {
     flex-direction: column;
     }
 }
 
+/* set flex properties for medium media screens */
 @media screen and (max-width: 768px) {
     body {
     flex-direction: column;
     }
 }
 
+/* set flex propertied for small media screens */
 @media screen and (max-width: 480px) {
     body {
     flex-direction: column;
